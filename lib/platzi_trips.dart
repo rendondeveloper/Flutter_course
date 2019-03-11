@@ -1,0 +1,66 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_platzi_app/home_trips.dart';
+import 'package:flutter_platzi_app/profile.dart';
+import 'package:flutter_platzi_app/search.dart';
+
+class PlatziTrips extends StatefulWidget{
+  @override
+  State<StatefulWidget> createState() {
+    // TODO: implement createState
+    return _PlatziTrips();
+  }
+}
+
+
+class _PlatziTrips extends State<PlatziTrips>{
+
+  int indexTap = 0;
+
+  final List<Widget> listTap = [
+    Home(),
+    Search(),
+    Profile()
+  ];
+
+  void onTapTapped(int index){
+   setState(() {
+     indexTap = index;
+   });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+
+
+
+
+    return Scaffold(
+      body: listTap[indexTap],
+      bottomNavigationBar: Theme(
+        data: Theme.of(context).copyWith(
+          canvasColor: Colors.transparent,
+          primaryColor: Colors.purple
+        ),
+        child: BottomNavigationBar(
+            onTap: onTapTapped,
+            currentIndex: indexTap,
+            items: [
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.home, color: Colors.red),
+                  title: Text(""),
+                  activeIcon: Icon(Icons.home, color: Colors.blue)
+              ),
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.search),
+                  title: Text("")
+              ),
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.person),
+                  title: Text("")
+              ),
+            ]),
+      ),
+    );
+  }
+}
