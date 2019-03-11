@@ -1,6 +1,6 @@
 # flutter_platzi_app
 
-A new Flutter application.
+Aplicación realiza en curso de Flutter bascio en la plataforma en linea Platzi.
 
 ## Getting Started
 
