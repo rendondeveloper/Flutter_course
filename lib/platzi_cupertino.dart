@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_platzi_app/ReportThree.dart';
 import 'package:flutter_platzi_app/report.dart';
 import 'profile.dart';
 import 'search.dart';
@@ -24,9 +25,11 @@ class PlatziCupertino extends StatelessWidget {
                 activeIcon: Icon(Icons.person, color: Colors.red)),
             BottomNavigationBarItem(
                 icon: Icon(Icons.report, color: Colors.blue),
-                activeIcon: Icon(Icons.report, color: Colors.red))
-          ],
-        ),
+                activeIcon: Icon(Icons.report, color: Colors.red)),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.list, color: Colors.blue),
+              activeIcon: Icon(Icons.list, color: Colors.red))
+        ]),
         tabBuilder: (BuildContext context, int index){
           switch(index){
             case 0:
@@ -47,6 +50,11 @@ class PlatziCupertino extends StatelessWidget {
              case 3:
               return CupertinoTabView(
                 builder: (BuildContext context) => Report(),
+              );
+              break;
+            case 4:
+              return CupertinoTabView(
+                builder: (BuildContext context) => ReportThree(),
               );
               break;
           }
