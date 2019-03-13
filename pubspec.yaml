@@ -81,6 +81,7 @@ flutter:
     - assets/img/photo_3.jpg
     - assets/img/photo_4.jpg
     - assets/img/photo_5.jpg
+    - assets/img/imagen_background_appbar.jpg
 
   fonts:
     - family: Lato
