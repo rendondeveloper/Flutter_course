@@ -23,17 +23,37 @@ class PlatziCupertino extends StatelessWidget {
                       icon: Icon(Icons.home, color: Colors.blue),
                       activeIcon: Icon(Icons.home, color: Colors.red)),
                   BottomNavigationBarItem(
-                      icon: Icon(Icons.search, color: Colors.blue),
-                      activeIcon: Icon(Icons.search, color: Colors.red)),
+                      icon: Icon(Icons.change_history, color: Colors.blue),
+                      activeIcon: Icon(Icons.change_history, color: Colors.red),
+                      title: Text(
+                          "Reto 1",
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold
+                          ),
+                      )
+                  ),
                   BottomNavigationBarItem(
-                      icon: Icon(Icons.person, color: Colors.blue),
-                      activeIcon: Icon(Icons.person, color: Colors.red)),
+                      icon: Icon(Icons.change_history, color: Colors.blue),
+                      activeIcon: Icon(Icons.change_history, color: Colors.red),
+                      title: Text(
+                      "Reto 2",
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold
+                      ),
+                    )
+                  ),
                   BottomNavigationBarItem(
-                      icon: Icon(Icons.report, color: Colors.blue),
-                      activeIcon: Icon(Icons.report, color: Colors.red)),
-                  BottomNavigationBarItem(
-                      icon: Icon(Icons.list, color: Colors.blue),
-                      activeIcon: Icon(Icons.list, color: Colors.red))
+                      icon: Icon(Icons.change_history, color: Colors.blue),
+                      activeIcon: Icon(Icons.change_history, color: Colors.red),
+                      title: Text(
+                        "Reto 3",
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold
+                        ),
+                      ))
                 ]),
             tabBuilder: (BuildContext context, int index){
               switch(index){
@@ -44,22 +64,17 @@ class PlatziCupertino extends StatelessWidget {
                   break;
                 case 1:
                   return CupertinoTabView(
-                    builder: (BuildContext context) => Search(),
+                    builder: (BuildContext context) =>  Report(),
                   );
                   break;
                 case 2:
                   return CupertinoTabView(
-                    builder: (BuildContext context) => Profile(),
+                    builder: (BuildContext context) => GeneratorListThree(),
                   );
                   break;
                 case 3:
                   return CupertinoTabView(
-                    builder: (BuildContext context) => Report(),
-                  );
-                  break;
-                case 4:
-                  return CupertinoTabView(
-                    builder: (BuildContext context) => GeneratorListThree(),
+                    builder: (BuildContext context) => Profile(),
                   );
                   break;
               }

@@ -129,7 +129,7 @@ class CardProfile extends StatelessWidget{
       height: 30.0,
       width: 30.0,
       margin: EdgeInsets.only(
-        top: _heightImage + (_heightInfo / 4 ),
+        top: _heightImage + (_heightInfo * .35 ),
             left: _widthDataCard - (_widthDataCard * .30)
       ),
       decoration: BoxDecoration(
