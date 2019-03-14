@@ -51,7 +51,7 @@ class ProfileAppBar extends StatelessWidget {
     final photoWithMargin = Container(
       height: 90.0,
       width: 90.0,
-      margin: EdgeInsets.only(left: 20),
+      margin: EdgeInsets.only(left: 10),
       decoration: BoxDecoration(color: Colors.white, shape: BoxShape.circle),
       child: photoProfile,
     );
@@ -194,7 +194,7 @@ class ProfileAppBar extends StatelessWidget {
 
 
     final background = Container(
-      height: (MediaQuery.of(context).size.height / 2),
+      height: (MediaQuery.of(context).size.height / 1.5),
       color: Colors.blue,
     );
 
