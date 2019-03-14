@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 class Review extends StatelessWidget{
 
-  String path = "";
-  String userName = "";
-  String detail = "";
-  String comment = "";
+  final String path;
+  final String userName;
+  final String detail;
+  final String comment;
 
   Review(this.path, this.userName, this.detail, this.comment);
 

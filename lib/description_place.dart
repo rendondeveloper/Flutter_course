@@ -3,9 +3,9 @@ import 'button.dart';
 
 class DescriptionPlace extends StatelessWidget {
 
-  String namePlace;
-  int startNumber;
-  String descriptionPlace;
+  final  String namePlace;
+  final int startNumber;
+  final String descriptionPlace;
   final int topStart = 5;
   Row rowStart;
 

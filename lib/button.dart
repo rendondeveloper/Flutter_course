@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class Button extends StatelessWidget{
 
-  String buttonText;
+  final String buttonText;
 
   Button(this.buttonText);
 

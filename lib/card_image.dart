@@ -3,7 +3,7 @@ import 'floating_action_button.dart';
 
 class CardImage extends  StatelessWidget                                                                                                                                                                                        {
 
-  String pathImage;
+  final String pathImage;
 
   CardImage(this.pathImage);
 
